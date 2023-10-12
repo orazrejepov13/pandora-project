@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 <style>
   @font-face {
@@ -72,12 +74,18 @@
 </style>
 </head>
 <body>
+  <script defer src="js/main.js"></script>
   <div class="font">
   <h1 style="text-align: center;"><b><u>PANDORA</u></b></h1> 
   </div>
-  <form style="margin-left: 50px; margin-top: -55px;">
+  <form style="margin-left: 150px; margin-top: -15px;">
     <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus>
-  </form>
+</form>
+  <div style="text-align: right; margin-right: 150px; margin-top: -15px;" class="btn-group">
+    <button type="button" class="btn btn-primary">EN</button>
+    <button type="button" class="btn btn-primary">RU</button>
+    <button type="button" class="btn btn-primary">TM</button>
+  </div>
   <p style="border:2px solid #000000;border-radius: 10px;box-shadow:8px 8px 8px #000000; width: 1415px; margin:20px; padding:20px; background-color: bisque; text-align: center; font-size:large;">
     <i>
      <b>Pandora</b> is a Danish jewellery manufacturer and retailer founded in 1982 by Per Enevoldsen <br> Company started as a family-run jewellery shop in Copenhagen <br>
@@ -266,11 +274,21 @@ The company has two production sites in Thailand and markets its products in mor
   <p style="text-align: right; margin-right: 50px; font-size: large; margin-top: 30px;">
    <i>Be the first to know about exciting new designs, <br> special events, store openings and much more </i>
   </p>
-  <form style="margin-right: 100px; margin-top: 20px; size: 50px; text-align: right;">
-    <label for="emailF">email</label>
-    <input name="email" pattern="[a-z]{8,10}" type="text" id="emailF"><br>
-    <input type="submit" value="sign up"><br>
+  <form style="text-align: right; margin-right: 100px;" class="form-inline" action="/action_page.php">
+    <div class="form-group">
+      <label class="sr-only" for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email"  name="email">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
   </form>
+</div>
   <i>
     <h3 style="border: 2px solid black; width: 300px; box-shadow: 8px 8px 8px; border-radius: 10px;padding: 10px; margin: 50px 10px; margin-left: 1160px; margin-top: 150px; text-align: center; font-size: large; background-color: burlywood;">
       <div class="font">
